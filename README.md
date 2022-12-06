@@ -9,10 +9,8 @@ This is a Backend-part of my new application for creating wishes cards.
   - Express.js
   - JavaScript (ES6)
   - MongoDB, Mongoose
-
-#### Dev-tools
-
-- nodemon
+- #### Dev-tools
+  - nodemon
 
 * #### App features
 
@@ -22,13 +20,13 @@ This is a Backend-part of my new application for creating wishes cards.
 
 - #### Architecture of Application
 
-  This application has been built according to MVC-pattern.
+The application is built for use within the MVC-pattern.
 
-  1. In the 'models' directory you can find entry data schemas.
+1. In the 'models' directory you can find entry data schemas.
 
-  2. There are two classes for each data schema to handle CRUD on the server side. These are Controller classes, Service classes.
+2. There are two classes for each data schema to handle CRUD on the server side. These are Controller classes, Service classes.
 
-* #### Deployment
+- #### Deployment
   You can use my API for your app by the following link: https://evgenii-buslaev.github.io/MoviesFinderAppReact/.
 
 Thank you for checking the app out!
