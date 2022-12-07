@@ -21,7 +21,7 @@ async function startApp() {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     });
-    app.listen(process.env.PORT, () =>
+    app.listen(process.env.PORT || 3000, () =>
       console.log(`Connected to DB. Server started at port ${PORT}`)
     );
   } catch (e) {
