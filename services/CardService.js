@@ -1,10 +1,8 @@
 import Card from "../models/Card.js";
-import FilesService from "./FilesService.js";
 
 class CardService {
-  async create(card, picture) {
-    const fileName = FilesService.saveFile(picture);
-    const createdCard = await Card.create({ ...card, picture: fileName });
+  async create(card) {
+    const createdCard = await Card.create(card);
     return createdCard;
   }
 
