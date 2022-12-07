@@ -8,12 +8,11 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(express.static("static"));
 app.use(fileUpload({}));
 app.use("/api", router);
 
 const PORT = process.env.PORT;
-const DB_URL = `mongodb+srv://eugenebus144:${process.env.DB_PASSWORD}@cluster0.b1ljs0y.mongodb.net/wishboard?retryWrites=true&w=majority`;
+const DB_URL = process.env.DB_URL;
 
 async function startApp() {
   try {
