@@ -27,7 +27,16 @@ The application is built for use within the MVC-pattern.
 2. There are two classes for each data schema to handle CRUD on the server side. These are Controller classes, Service classes.
 
 - #### Deployment
-  You can use my API for your app by the following link: https://evgenii-buslaev.github.io/MoviesFinderAppReact/.
+
+  You can use my API for your app by the following links:
+
+  - POST https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - CREATE CARD
+  - GET https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - GET ALL CARDS
+  - GET https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards/<id> - GET A CARD
+  - PUT https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - UPDATE A CARD
+  - DELETE https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - DELETE A CARD
+
+  Also these API links can be used for users collection (./api/users).
 
 Thank you for checking the app out!
 
