@@ -32,7 +32,7 @@ The application is built for use within the MVC-pattern.
 
   - POST https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - CREATE CARD
   - GET https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - GET ALL CARDS
-  - GET https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards/<id> - GET A CARD
+  - GET https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards/:id - GET A CARD
   - PUT https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - UPDATE A CARD
   - DELETE https://wishboard-backend-78747zzu6-evgenii-buslaev.vercel.app/api/cards - DELETE A CARD
 
