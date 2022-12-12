@@ -29,11 +29,11 @@ The application is built for use within the MVC-pattern.
 
 To use API you have to create an account at mongodb.com and create a cluster. Then deploy this app and add DB_URL with your password and PORT as environmental variables.
 
-- POST https://wishboard-backend-ianv.vercel.app/api/cards - CREATE CARD
-- GET https://wishboard-backend-ianv.vercel.app/api/cards - GET ALL CARDS
-- GET https://wishboard-backend-ianv.vercel.app/api/cards:id - GET A CARD
-- PUT https://wishboard-backend-ianv.vercel.app/api/cards - UPDATE A CARD
-- DELETE https://wishboard-backend-ianv.vercel.app/api/cards - DELETE A CARD
+- POST _your deployment link_/api/cards - CREATE CARD
+- GET _your deployment link_/api/cards - GET ALL CARDS
+- GET _your deployment link_/api/cards:id - GET A CARD
+- PUT _your deployment link_/api/cards - UPDATE A CARD
+- DELETE _your deployment link_/api/cards - DELETE A CARD
 
 CARD:
 
@@ -51,14 +51,14 @@ CARD:
 USER:
 
 ```json
-{
   {
-    "name":"Eugene",
-    "password":"********",
-    "sex":"male",
-    "age":"26"
+     {
+       "name": "Eugene",
+       "password": "********",
+       "sex": "male",
+       "age": "26"
+     }
   }
-}
 ```
 
 ## Available Scripts
