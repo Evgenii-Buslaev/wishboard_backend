@@ -27,7 +27,7 @@ The application is built for use within the MVC-pattern.
 
 - #### API
 
-To use API you have to create an account at mongodb.com and create a cluster. Then deploy this app and add DB_URL with your password and PORT as enviremetal variables.
+To use API you have to create an account at mongodb.com and create a cluster. Then deploy this app and add DB_URL with your password and PORT as environmental variables.
 
 - POST https://wishboard-backend-ianv.vercel.app/api/cards - CREATE CARD
 - GET https://wishboard-backend-ianv.vercel.app/api/cards - GET ALL CARDS
