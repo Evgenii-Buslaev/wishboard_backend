@@ -19,6 +19,15 @@ class UserService {
     return user;
   }
 
+  async login(user) {
+    const { name, password } = user;
+    const users = await User.find();
+    const logged_user = users.find(
+      (user) => user.name === name && user.password === password
+    );
+    return logged_user || "Такой пользователь не найден";
+  }
+
   async update(user) {
     if (!user._id) {
       throw new Error("Не указан ID");

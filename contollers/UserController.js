@@ -28,6 +28,15 @@ class UserController {
     }
   }
 
+  async login(req, res) {
+    try {
+      const user = await UserService.login(req.body);
+      return res.json(user);
+    } catch (e) {
+      res.status(500).json(e);
+    }
+  }
+
   async update(req, res) {
     try {
       const updatedUser = await UserService.update(req.body);

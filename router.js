@@ -13,6 +13,7 @@ router.delete("/cards", CardController.delete);
 
 // users
 router.post("/users", UserController.create);
+router.get("/login", UserController.login);
 router.get("/users", UserController.getAll);
 router.get("/users/:id", UserController.getOne);
 router.put("/users", UserController.update);
