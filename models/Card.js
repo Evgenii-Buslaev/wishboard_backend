@@ -5,7 +5,7 @@ const Card = new mongoose.Schema({
   title: { type: String, required: true },
   text: { type: String, required: true },
   picture: { type: String },
-  likes: { type: Number, default: 0 },
+  likes: { type: Array },
   comments: { type: Array },
   createdAt: {
     type: Date,
