@@ -2,6 +2,11 @@ import User from "../models/User.js";
 
 class UserService {
   async create(user) {
+    const users = await User.find();
+    const created = users.find((account) => account.name === user.name);
+    if (created) {
+      throw new Error("Пользователь с таким именем уже существует");
+    }
     const createdUser = await User.create(user);
     return createdUser;
   }
