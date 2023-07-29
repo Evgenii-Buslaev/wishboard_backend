@@ -10,12 +10,6 @@ class UserService {
     const createdUser = await User.create(user);
     return createdUser;
   }
-
-  async getAll() {
-    const users = await User.find();
-    return users;
-  }
-
   async getOne(id) {
     if (!id) {
       throw new Error("Не указан ID");

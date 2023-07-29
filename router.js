@@ -14,7 +14,6 @@ router.delete("/cards", CardController.delete);
 // users
 router.post("/users", UserController.create);
 router.post("/login", UserController.login);
-router.get("/users", UserController.getAll);
 router.get("/users/:id", UserController.getOne);
 router.put("/users", UserController.update);
 router.delete("/users", UserController.delete);
